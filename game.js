@@ -15,9 +15,8 @@ function nextSequence(){
     .fadeOut(100)
     .fadeIn(100);
 
-    $("#" + randomChosenColor).on(function () {
-      $("sounds/" + randomChosenColor + ".mp3").play();
-    });
+    var audio = new Audio("sounds/" + randomChosenColor + ".mp3");
+    audio.play();
 
 
 
