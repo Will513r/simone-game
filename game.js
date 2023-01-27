@@ -8,15 +8,12 @@ function nextSequence(){
     var randomNumber = Math.floor(Math.random() * 4);
     var randomChosenColor = buttonColors[randomNumber];
     gamePattern.push(randomChosenColor);
-
-    var $button = $("#" + randomChosenColor);
-
     
+    $("#" + randomChosenColor)
+      .fadeOut(100)
+      .fadeIn(100);
+      }
+   
+ 
 
-    
-}
-
-// let $button = $("#" + randomChosenColor);
-
-$("$button").fadeOut(100).fadeIn(100);
 
